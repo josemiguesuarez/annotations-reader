@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<featureModel>
+    <struct>
+        <and name="biblioteca">
+            <and name="interfaz">
+                <feature mandatory="true" name="InterfazBiblioteca"/>
+                <feature mandatory="false" name="PanelAccionAgregarLibro"/>
+                <feature mandatory="false" name="PanelAccionBuscarLibro"/>
+                <feature mandatory="false" name="PanelAcciones"/>
+                <feature mandatory="false" name="PanelAccionesContenedora"/>
+                <feature mandatory="false" name="PanelAccionesContenedoraLibro"/>
+                <feature mandatory="false" name="PanelAccionesUsuario"/>
+                <feature mandatory="false" name="PanelImagen"/>
+                <feature mandatory="true" name="PanelLibro"/>
+                <feature mandatory="false" name="PanelLibroAlquilado"/>
+                <feature mandatory="true" name="PanelLibros"/>
+            </and>
+            <and name="excepciones">
+                <feature mandatory="false" name="CargarBibliotecaException"/>
+                <feature mandatory="false" name="CopiasInsuficientesException"/>
+                <feature mandatory="false" name="LibroInexistenteException"/>
+                <feature mandatory="false" name="LibroYaExisteException"/>
+                <feature mandatory="false" name="SalvarBibliotecaException"/>
+                <feature mandatory="false" name="UsuarioPreexistenteException"/>
+            </and>
+            <and name="implementacion1">
+                <feature mandatory="true" name="Biblioteca"/>
+                <feature mandatory="true" name="FabricaBiblioteca"/>
+                <feature mandatory="false" name="Libro"/>
+                <feature mandatory="false" name="NodoIndice"/>
+                <feature mandatory="false" name="Usuario"/>
+            </and>
+            <and name="mundo">
+                <feature mandatory="true" name="AbstractBiblioteca"/>
+                <feature mandatory="true" name="IFabricaBiblioteca"/>
+                <feature mandatory="false" name="ILibro"/>
+                <feature mandatory="false" name="IUsuario"/>
+            </and>
+        </and>
+    </struct>
+</featureModel>
